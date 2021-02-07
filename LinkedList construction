@@ -70,7 +70,7 @@ class DoublyLinkedList:
     
     def containsNodeWithValue(self, value):
         node = self.head
-        while node not None and node.value != value:
+        while node is not None and node.value != value:
             node = node.next
         return node is not None
         
